@@ -1,0 +1,53 @@
+*Tree for app to be used:
+
+main_app
+|-main.py
+|-paths.py
+|-apps
+	|- invoice_generator
+		|- __init__.py
+		|- invoice_basic.py
+	|- qr_generator
+		|- __init__.py
+		|- qr_generator.py
+|-databases
+	|- inventory
+		|- current_inventory.sqlite
+		|- history_inventory.sqlite
+		|- inventory_definitions.sqlite
+		|- inventory_templates.json
+	|- invoices
+		|- invoice_templates
+			|- vat_23.json
+			|- vat_mar.json
+	|- private
+		|- private_template.json
+		|- crypted_data.json
+|-io
+	|- __init__.py
+	|- io_module.py
+	|- add_template
+		|- __init__.py
+		|- add_template.py
+	|- add_current
+		|- __init__.py
+		|- add_current.py
+	|- remove_record
+		|- __init__.py
+		|- move_to_history.py
+		|- delete_from_current.py
+	|- show_table
+		|- __init__.py
+		|- show_table.py
+
+*Tree for web development
+
+Things needed
+- log in stage
+- main stage (to open visible current and history tables, private data, invoice data)
+- secondary stages (current and history tables, private data, invoice data)
+- every in current in different address, so can be qr code generated, button to select kind of invoice and remove from current (also how many)
+- everything to be achievable only for logged in user
+
+
+
